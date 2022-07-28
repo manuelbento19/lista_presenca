@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css';
 
-import { Card,CardProps } from '../../components/Card';
+import { Card,CardProps } from 'components/Card';
 
 type ProfileResponse = {
   name:string;
