@@ -1,0 +1,94 @@
+.container {
+    height: 100%;
+    display: flex;
+}
+
+.container aside {
+    height: 100%;
+    display: flex;
+    padding: 6px;
+    flex: 1;
+}
+
+.container aside .content {
+    max-width: 380px;
+    width: 100%;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.container aside .content h1{
+    font-size: 18px;
+    color: #929292;
+    margin: 0 auto;
+}
+.container aside .content form{
+    padding: 18px;
+    border: none;
+    box-shadow: -9px 20px 20px 0px rgb(0 0 0 / 30%);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    background-color: #fff;
+}
+.container aside .content form header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: end;
+}
+.container aside .content form header strong {
+    color: #929292;
+    font-size: 14px;
+    text-shadow: #d4d4d4 -3px 7px 5px;
+}
+.container aside .content form header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.container aside .content form .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.container aside .content form .input-group input {
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+}
+
+.container aside .content form .input-group button {
+    width: 100%;
+    padding: 12px;
+    font-weight: 700;
+    background: rebeccapurple;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.2s;
+    font-size: 16px;
+}
+
+.container aside .content form .input-group button:hover {
+    filter: brightness(0.9);
+}
+.container main {
+    flex:2;
+    overflow-y: scroll;
+}
+.container main .content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 12px;
+    margin: auto;
+    padding: 22px;
+}
